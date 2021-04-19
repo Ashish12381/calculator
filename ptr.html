@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .ash{
+        text-align: center;
+        margin-top: 100px;
+    } 
+    body{
+     background-image: url("cal.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    }
+    .pal{
+     background-color:skyblue;
+   
+    width: 750px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 100px;
+
+
+    }
+ </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="jumbotron pal">
+        <h2  style="text-align: center;color: blue;">Basic calculator for Simple Interest</h2>
+  
+  <form onsubmit="return check()">
+    <div class="form-group">
+      
+      <input type="number" class="form-control" id="pa" placeholder="Enter principal ampount" style="text-align: center;margin-top: 20px;"  min="1"      required>
+    </div>
+    <div class="form-group">
+      
+      <input type="number" class="form-control" id="num" placeholder="enter rate in percentage"style="text-align: center; "  min="1"   max="100" required>
+    </div>
+    <div class="form-group">
+      
+        <input type="numbers" class="form-control" id="yrs" placeholder="time in years"style="text-align: center;"   min="1"   required>
+      </div>
+      <div class="form-group">
+                  
+        <input type="texbox" class="form-control"  name="display"placeholder="Your Simple Interested is" style="text-align: center; " disabled>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <p id="result"></p>
+  </form>
+</div>
+</div>
+<script src="./ptr.js"></script>
+
+</body>
+</html>
